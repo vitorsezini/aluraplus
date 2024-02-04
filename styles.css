@@ -21,12 +21,14 @@ body{
     font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
+    
 }
 
 .principal{
-    background-image: url('/img/Background.png');
+    background-image: url('./img/Background.png');
     background-repeat: no-repeat; /* não repetir a imagem de fundo */
     background-size: cover; /* preencher todo o container */
+    background-position: center;
     align-items: center;
     text-align: center;
 
@@ -176,4 +178,103 @@ body{
 
 .botao__secundario:hover{
     background-color: var(--cor-botao-secundario-hover);
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        background-image: none;
+        display: block;
+        justify-content: center;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .container__imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
+    }
+
+    .conteudo__titulo {
+        font-size: 2rem;
+    }
+
+    .conteudo__descricao {
+        padding: 0em 1em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center; 
+    }
+
+    .container.secundario {
+        margin-bottom: 6em;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .terciario {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .secundario__imagem {
+        width: 65vw;    
+        margin-left: 0;
+        margin-bottom: 2em;
+    }
+
+    .descricao__texto {
+        margin: 1em 1em;
+    }
+
+    .dispositivos {
+        overflow: hidden;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2rem;
+    }
+
+    .plataformas__disponiveis{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: none;
+        width: 100vh;
+    }
+
+    .plataformas__disponiveis li img{
+        width: 100%;
+    };
+
+    .dispositivos__lista {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .dispositivos__nomes {
+        font-size: 1.7rem;
+    }
+
+    .rodape {
+        margin: 2rem;
+    }
+
+    .lista__link__botao {
+        font-size: 0.8rem;
+    }
+
+    .rodape__texto {
+        font-size: 0.6rem;
+    }
+
+   
 }
