@@ -205,6 +205,11 @@ body{
         font-size: 2rem;
     }
 
+    .imagem{
+        width: 100%;
+        height: auto;
+    }
+
     .conteudo__descricao {
         padding: 0em 1em;
     }
@@ -247,20 +252,20 @@ body{
         display: flex;
         justify-content: center;
         list-style-type: none;
-        margin: none;
-        width: 100vh;
+        margin: 0;
+    }
+    
+    .plataformas__disponiveis li{
+        margin: 0;
+
     }
 
-    .plataformas__disponiveis li img{
-        width: 100%;
-    };
-
-    .dispositivos__lista {
+    .plataformas__disponiveis {
         flex-direction: column;
         overflow: hidden;
     }
 
-    .dispositivos__nomes {
+    .item__disponivel {
         font-size: 1.7rem;
     }
 
@@ -268,11 +273,11 @@ body{
         margin: 2rem;
     }
 
-    .lista__link__botao {
+    .lista__link {
         font-size: 0.8rem;
     }
 
-    .rodape__texto {
+    .texto__rodape {
         font-size: 0.6rem;
     }
 
