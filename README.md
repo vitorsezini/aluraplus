@@ -1,2 +1,2 @@
-# aluraplus
-Projeto feito no curso da Alura
+# Aluraplus
+Projeto feito no curso da Alura utilizando HTML e CSS.
